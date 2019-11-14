@@ -1,8 +1,8 @@
-﻿#Very simple and small javascript library to encode html
+﻿# Very simple and small javascript library to encode html
 
 htmlencode.js is only 6.51Kb, and minified file is 2.61Kb
 
-##How to use:
+## How to use:
 
 very simple to use this library.
 
@@ -17,7 +17,7 @@ and use it:
     var encodedHTML = htmlEncode(htmlStr)
 </script>
 
-##Reserved entities, symbols and characters in HTML
+## Reserved entities, symbols and characters in HTML
 This table shows a list of reserved HTML entities with their associated character and description.
 
 |Character|Entity name|Description|
