@@ -2,6 +2,8 @@
 
 htmlencode.js is only 6.51Kb, and minified file is 2.61Kb
 
+see [demo](https://codepen.io/ali-33/pen/VwwEyrv) at https://codepen.io/ali-33/pen/VwwEyrv
+
 ## How to use:
 
 very simple to use this library.
