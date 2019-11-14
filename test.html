@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Javascript Html Encode</title>
+    <script src="htmlencode.js"></script>
+
+    <style>
+        body {
+            font-family: Courier New, Courier, monospace;
+            font-size: 13px;
+        }
+
+        textarea {
+            width: 100%;
+            border-radius: 3px;
+            height: 200px;
+        }
+
+        label {
+            font-family:Arial;
+            font-size:1.6em;
+            margin-top: 10px;
+            font-weight:bold;
+            color:#333;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="html_code" placeholder="paste html code">
+        
+    </textarea>
+    <input type="button" value="Encode" onclick="encode()" />
+    <hr />
+    <label>encoded:</label>
+    <textarea id="html_encoded"></textarea>
+
+    <label>html:</label>
+    <pre id="html_view"></pre>
+    <script>
+        var doc = document;
+        function encode() {            
+            doc.querySelector('#html_encoded').value = htmlEncode(doc.querySelector('#html_code').value);
+            doc.querySelector('#html_view').innerHTML = htmlEncode(doc.querySelector('#html_code').value);
+        }
+        function loadTestHTML() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    doc.querySelector('#html_code').value = this.responseText;
+                }
+            };
+            xhttp.open("GET", location.href, true);
+            xhttp.send();
+        }
+        loadTestHTML();
+    </script>
+</body>
+</html>
