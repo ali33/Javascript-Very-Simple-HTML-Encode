@@ -8,15 +8,15 @@ very simple to use this library.
 
 add script tag:
 
-code:
+```html
 <script src="htmlencode.js"></script>
-
+```
 and use it:
-
+```html
 <script>
     var encodedHTML = htmlEncode(htmlStr)
 </script>
-
+```
 ## Reserved entities, symbols and characters in HTML
 This table shows a list of reserved HTML entities with their associated character and description.
 
